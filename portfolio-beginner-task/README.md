@@ -81,3 +81,17 @@ portfolio-beginner-task/
 ## License
 
 This project is open source and available under the MIT License. 
+
+some screenshots:
+![image](https://github.com/user-attachments/assets/151c2925-eb83-484b-a193-197d01da47b7)
+
+![image](https://github.com/user-attachments/assets/d4f3d2b6-2aa2-4f55-90d8-3a0b7eb04730)
+
+![image](https://github.com/user-attachments/assets/4d90969c-1260-4b1b-90dc-344238652a83)
+
+![image](https://github.com/user-attachments/assets/e63dbdae-57d8-4a9d-9f04-8696ae3a22da)
+![image](https://github.com/user-attachments/assets/01470930-a401-4074-807d-47a0cdc1f43b)
+
+
+
+
