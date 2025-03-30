@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Chennai Super Kings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-yellow-400 shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/200px-Chennai_Super_Kings_Logo.svg.png" 
+                         alt="CSK Logo" 
+                         class="h-16">
+                    <h1 class="text-2xl font-bold ml-4 text-blue-900">Chennai Super Kings</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-blue-900 hover:text-blue-700 font-semibold">HOME</a>
+                    <a href="players.html" class="text-blue-900 hover:text-blue-700 font-semibold">PLAYERS</a>
+                    <a href="news.html" class="text-blue-900 hover:text-blue-700 font-semibold">NEWS</a>
+                    <a href="schedule.html" class="text-blue-900 hover:text-blue-700 font-semibold">SCHEDULE</a>
+                    <a href="statistics.html" class="text-blue-900 hover:text-blue-700 font-semibold">STATISTICS</a>
+                    <a href="fanzone.html" class="text-blue-900 hover:text-blue-700 font-semibold">FAN ZONE</a>
+                </div>
+                <button class="md:hidden text-blue-900" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4">
+                    <a href="index.html" class="text-blue-900 hover:text-blue-700 font-semibold">HOME</a>
+                    <a href="players.html" class="text-blue-900 hover:text-blue-700 font-semibold">PLAYERS</a>
+                    <a href="news.html" class="text-blue-900 hover:text-blue-700 font-semibold">NEWS</a>
+                    <a href="schedule.html" class="text-blue-900 hover:text-blue-700 font-semibold">SCHEDULE</a>
+                    <a href="statistics.html" class="text-blue-900 hover:text-blue-700 font-semibold">STATISTICS</a>
+                    <a href="fanzone.html" class="text-blue-900 hover:text-blue-700 font-semibold">FAN ZONE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Statistics Hero Section -->
+    <section class=" text-blue-900 py-10 mt-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Team Statistics</h1>
+            <p class="text-xl text-black">Numbers that define our legacy</p>
+        </div>
+    </section>
+
+    <!-- Key Statistics -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2">🏆</div>
+                    <h3 class="text-2xl font-bold text-blue-900">4</h3>
+                    <p class="text-gray-600">IPL Titles</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2">✨</div>
+                    <h3 class="text-2xl font-bold text-blue-900">121</h3>
+                    <p class="text-gray-600">Matches Won</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2">📈</div>
+                    <h3 class="text-2xl font-bold text-blue-900">59.8%</h3>
+                    <p class="text-gray-600">Win Percentage</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
+                    <div class="text-4xl mb-2">🎯</div>
+                    <h3 class="text-2xl font-bold text-blue-900">9</h3>
+                    <p class="text-gray-600">Final Appearances</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Batting Records -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-900 mb-12">Batting Records</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left">Player</th>
+                                <th class="px-6 py-3 text-left">Matches</th>
+                                <th class="px-6 py-3 text-left">Runs</th>
+                                <th class="px-6 py-3 text-left">Average</th>
+                                <th class="px-6 py-3 text-left">Strike Rate</th>
+                                <th class="px-6 py-3 text-left">Highest Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">MS Dhoni</td>
+                                <td class="px-6 py-4">250</td>
+                                <td class="px-6 py-4">5,000+</td>
+                                <td class="px-6 py-4">38.5</td>
+                                <td class="px-6 py-4">135.2</td>
+                                <td class="px-6 py-4">84*</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Suresh Raina</td>
+                                <td class="px-6 py-4">176</td>
+                                <td class="px-6 py-4">5,000+</td>
+                                <td class="px-6 py-4">32.6</td>
+                                <td class="px-6 py-4">137.8</td>
+                                <td class="px-6 py-4">100*</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Ruturaj Gaikwad</td>
+                                <td class="px-6 py-4">46</td>
+                                <td class="px-6 py-4">1,800+</td>
+                                <td class="px-6 py-4">39.2</td>
+                                <td class="px-6 py-4">130.5</td>
+                                <td class="px-6 py-4">101*</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Devon Conway</td>
+                                <td class="px-6 py-4">32</td>
+                                <td class="px-6 py-4">1,200+</td>
+                                <td class="px-6 py-4">42.3</td>
+                                <td class="px-6 py-4">138.7</td>
+                                <td class="px-6 py-4">92*</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bowling Records -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-900 mb-12">Bowling Records</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-blue-900 text-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left">Player</th>
+                                <th class="px-6 py-3 text-left">Matches</th>
+                                <th class="px-6 py-3 text-left">Wickets</th>
+                                <th class="px-6 py-3 text-left">Economy</th>
+                                <th class="px-6 py-3 text-left">Average</th>
+                                <th class="px-6 py-3 text-left">Best Figures</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Ravindra Jadeja</td>
+                                <td class="px-6 py-4">180</td>
+                                <td class="px-6 py-4">150+</td>
+                                <td class="px-6 py-4">7.6</td>
+                                <td class="px-6 py-4">24.5</td>
+                                <td class="px-6 py-4">4/12</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Deepak Chahar</td>
+                                <td class="px-6 py-4">73</td>
+                                <td class="px-6 py-4">72</td>
+                                <td class="px-6 py-4">7.8</td>
+                                <td class="px-6 py-4">26.3</td>
+                                <td class="px-6 py-4">4/13</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Matheesha Pathirana</td>
+                                <td class="px-6 py-4">25</td>
+                                <td class="px-6 py-4">32</td>
+                                <td class="px-6 py-4">7.9</td>
+                                <td class="px-6 py-4">22.4</td>
+                                <td class="px-6 py-4">3/15</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Dwayne Bravo</td>
+                                <td class="px-6 py-4">144</td>
+                                <td class="px-6 py-4">168</td>
+                                <td class="px-6 py-4">8.2</td>
+                                <td class="px-6 py-4">23.8</td>
+                                <td class="px-6 py-4">4/22</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Records -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-900 mb-12">Notable Partnerships</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Highest Partnership</h3>
+                            <p class="text-gray-600">181 runs</p>
+                        </div>
+                        <div class="text-3xl">🤝</div>
+                    </div>
+                    <p class="text-gray-700">Faf du Plessis & Shane Watson vs KXIP (2021)</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Most Successful Pair</h3>
+                            <p class="text-gray-600">2,000+ runs</p>
+                        </div>
+                        <div class="text-3xl">🌟</div>
+                    </div>
+                    <p class="text-gray-700">MS Dhoni & Suresh Raina (2008-2022)</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Fastest Partnership</h3>
+                            <p class="text-gray-600">100 runs in 41 balls</p>
+                        </div>
+                        <div class="text-3xl">⚡</div>
+                    </div>
+                    <p class="text-gray-700">MS Dhoni & Albie Morkel vs RCB (2012)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>Email: info@chennaiipl.com</p>
+                    <p>Phone: +91 44 2852 4500</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/ChennaiIPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Twitter"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/TheChennaiSuperKings/" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Facebook"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/chennaiipl/" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Instagram"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Careers</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <form class="flex" role="search">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" 
+                               id="email" 
+                               placeholder="Enter your email" 
+                               class="p-2 rounded-l text-black"
+                               required>
+                        <button type="submit" 
+                                class="bg-yellow-400 text-blue-900 px-4 rounded-r font-bold hover:bg-yellow-500 transition">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-blue-800">
+                <p>&copy; 2025 Chennai Super Kings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
