@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the players of Chennai Super Kings - 4-time IPL Champions">
+    <title>Players - Chennai Super Kings</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/32x32-Chennai_Super_Kings_Logo.svg.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/16x16-Chennai_Super_Kings_Logo.svg.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/180x180-Chennai_Super_Kings_Logo.svg.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- External CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-yellow-400 shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/200px-Chennai_Super_Kings_Logo.svg.png" 
+                         alt="CSK Logo" 
+                         class="h-16">
+                    <h1 class="text-2xl font-bold ml-4 text-blue-900">Chennai Super Kings</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-blue-900 hover:text-blue-700 font-semibold">HOME</a>
+                    <a href="players.html" class="text-blue-900 hover:text-blue-700 font-semibold">PLAYERS</a>
+                    <a href="news.html" class="text-blue-900 hover:text-blue-700 font-semibold">NEWS</a>
+                    <a href="schedule.html" class="text-blue-900 hover:text-blue-700 font-semibold">SCHEDULE</a>
+                    <a href="statistics.html" class="text-blue-900 hover:text-blue-700 font-semibold">STATISTICS</a>
+                    <a href="fanzone.html" class="text-blue-900 hover:text-blue-700 font-semibold">FAN ZONE</a>
+                </div>
+                <button class="md:hidden text-blue-900" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4">
+                    <a href="index.html" class="text-blue-900 hover:text-blue-700 font-semibold">HOME</a>
+                    <a href="players.html" class="text-blue-900 hover:text-blue-700 font-semibold">PLAYERS</a>
+                    <a href="news.html" class="text-blue-900 hover:text-blue-700 font-semibold">NEWS</a>
+                    <a href="schedule.html" class="text-blue-900 hover:text-blue-700 font-semibold">SCHEDULE</a>
+                    <a href="statistics.html" class="text-blue-900 hover:text-blue-700 font-semibold">STATISTICS</a>
+                    <a href="fanzone.html" class="text-blue-900 hover:text-blue-700 font-semibold">FAN ZONE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Players Hero Section -->
+    <section class="text-white py-2 mt-24">
+    
+    </section>
+
+    <!-- Players Grid Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <!-- Player Categories -->
+            <div class="mb-12">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="category-btn active bg-yellow-400 text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition" data-category="all">All Players</button>
+                    <button class="category-btn bg-blue-900 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition" data-category="batsman">Batsmen</button>
+                    <button class="category-btn bg-blue-900 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition" data-category="bowler">Bowlers</button>
+                    <button class="category-btn bg-blue-900 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition" data-category="all-rounder">All-rounders</button>
+                    <button class="category-btn bg-blue-900 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition" data-category="wicket-keeper">Wicket-keepers</button>
+                </div>
+            </div>
+
+            <!-- Players Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="players-grid">
+                <!-- Players will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>Email: info@chennaiipl.com</p>
+                    <p>Phone: +91 44 2852 4500</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/ChennaiIPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Twitter"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/TheChennaiSuperKings/" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Facebook"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/chennaiipl/" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Instagram"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Careers</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <form class="flex" role="search">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" 
+                               id="email" 
+                               placeholder="Enter your email" 
+                               class="p-2 rounded-l text-black"
+                               required>
+                        <button type="submit" 
+                                class="bg-yellow-400 text-blue-900 px-4 rounded-r font-bold hover:bg-yellow-500 transition">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-blue-800">
+                <p>&copy; 2025 Chennai Super Kings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Player filtering functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-yellow-400', 'text-blue-900');
+                        btn.classList.add('bg-blue-900', 'text-white');
+                    });
+                    
+                    // Add active class to clicked button
+                    button.classList.remove('bg-blue-900', 'text-white');
+                    button.classList.add('active', 'bg-yellow-400', 'text-blue-900');
+                    
+                    // Filter players
+                    const category = button.getAttribute('data-category');
+                    filterPlayers(category);
+                });
+            });
+        });
+
+        function filterPlayers(category) {
+            const playerCards = document.querySelectorAll('.player-card');
+            
+            playerCards.forEach(card => {
+                const playerCategory = card.getAttribute('data-category');
+                if (category === 'all' || playerCategory === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html> 
