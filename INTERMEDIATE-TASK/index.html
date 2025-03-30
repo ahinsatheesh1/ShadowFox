@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Chennai Super Kings - 4-time IPL Champions">
+    <title>Chennai Super Kings - Official Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/32x32-Chennai_Super_Kings_Logo.svg.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/16x16-Chennai_Super_Kings_Logo.svg.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/180x180-Chennai_Super_Kings_Logo.svg.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- External CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Animation Classes */
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .delay-200 { animation-delay: 200ms; }
+        .delay-400 { animation-delay: 400ms; }
+
+        /* Component Classes */
+        .nav-link {
+            @apply text-blue-900 hover:text-blue-700 font-semibold;
+        }
+
+        .card {
+            @apply bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300;
+        }
+
+        .section-title {
+            @apply text-xl font-bold text-blue-900 mb-4;
+        }
+
+        .sponsor-card {
+            @apply flex flex-col items-center justify-center;
+        }
+
+        .sponsor-image {
+            @apply h-16 object-contain filter hover:brightness-110 transition;
+        }
+
+        .sponsor-image-small {
+            @apply h-12 object-contain filter hover:brightness-110 transition;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-yellow-400 shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/200px-Chennai_Super_Kings_Logo.svg.png" 
+                         alt="CSK Logo" 
+                         class="h-16">
+                    <h1 class="text-2xl font-bold ml-4 text-blue-900">Chennai Super Kings</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-blue-900 hover:text-blue-700 font-semibold">HOME</a>
+                    <a href="players.html" class="text-blue-900 hover:text-blue-700 font-semibold">PLAYERS</a>
+                    <a href="news.html" class="text-blue-900 hover:text-blue-700 font-semibold">NEWS</a>
+                    <a href="schedule.html" class="text-blue-900 hover:text-blue-700 font-semibold">SCHEDULE</a>
+                    <a href="statistics.html" class="text-blue-900 hover:text-blue-700 font-semibold">STATISTICS</a>
+                    <a href="fanzone.html" class="text-blue-900 hover:text-blue-700 font-semibold">FAN ZONE</a>
+                </div>
+                <button class="md:hidden text-blue-900" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4">
+                    <a href="index.html" class="text-blue-900 hover:text-blue-700 font-semibold">HOME</a>
+                    <a href="players.html" class="text-blue-900 hover:text-blue-700 font-semibold">PLAYERS</a>
+                    <a href="news.html" class="text-blue-900 hover:text-blue-700 font-semibold">NEWS</a>
+                    <a href="schedule.html" class="text-blue-900 hover:text-blue-700 font-semibold">SCHEDULE</a>
+                    <a href="statistics.html" class="text-blue-900 hover:text-blue-700 font-semibold">STATISTICS</a>
+                    <a href="fanzone.html" class="text-blue-900 hover:text-blue-700 font-semibold">FAN ZONE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-blue-900 to-yellow-500 text-white py-32 mt-24" role="banner">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold mb-4 animate-fade-in-up animate-pulse">Welcome to Whistle Podu Nation!</h1>
+                <p class="text-xl mb-8 animate-fade-in-up delay-200 animate-pulse">Home of the 4-time IPL Champions</p>
+                <button class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-yellow-500">
+                    Buy Tickets
+                </button>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="py-16" aria-labelledby="highlights-title">
+            <div class="container mx-auto px-4">
+                <h2 id="highlights-title" class="sr-only">Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Next Match -->
+                    <article class="card">
+                        <h3 class="section-title">Next Match</h3>
+                        <div class="flex items-center justify-between">
+                            <div class="text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/100px-Chennai_Super_Kings_Logo.svg.png" 
+                                     alt="CSK" 
+                                     class="w-16 mx-auto"
+                                     width="100"
+                                     height="100">
+                                <p class="mt-2 font-bold">CSK</p>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-600">VS</div>
+                            <div class="text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/100px-Mumbai_Indians_Logo.svg.png" 
+                                     alt="MI" 
+                                     class="w-16 mx-auto"
+                                     width="100"
+                                     height="100">
+                                <p class="mt-2 font-bold">MI</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="text-gray-600">March 24, 2025 - 7:30 PM IST</p>
+                            <p class="text-gray-600">MA Chidambaram Stadium</p>
+                        </div>
+                    </article>
+
+                    <!-- Latest News -->
+                    <article class="card">
+                        <h3 class="section-title">Latest News</h3>
+                        <img src="\assets\images\news\metro.jpeg" 
+                             alt="CSK Metro Partnership" 
+                             class="w-full h-48 object-cover rounded mb-4">
+                        <h4 class="font-bold text-lg mb-2">CSK Partners with Chennai Metro for IPL 2025</h4>
+                        <p class="text-gray-600 text-sm mb-4">Chennai Super Kings have announced a special partnership with Chennai Metro for the TATA IPL 2025 season. This collaboration aims to enhance fan experience by providing seamless transportation to and from match venues.</p>
+                        <a href="news.html" class="text-blue-900 font-bold mt-4 inline-block hover:text-blue-700">Read More →</a>
+                    </article>
+
+                    <!-- Quick Stats -->
+                    <article class="card">
+                        <h3 class="section-title">Quick Stats</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">IPL Titles</span>
+                                <span class="font-bold text-blue-900">4 🏆</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Win Rate</span>
+                                <span class="font-bold text-blue-900">59.8% 📈</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Finals</span>
+                                <span class="font-bold text-blue-900">9 🎯</span>
+                            </div>
+                            <a href="statistics.html" class="text-blue-900 font-bold mt-4 inline-block hover:text-blue-700">View All Stats →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="py-16 bg-gray-50" aria-labelledby="quick-links-title">
+            <div class="container mx-auto px-4">
+                <h2 id="quick-links-title" class="sr-only">Quick Links</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="players.html" class="group">
+                        <div class="card">
+                            <i class="fas fa-users text-4xl text-blue-900 mb-4" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold text-blue-900">Meet Our Players</h3>
+                            <p class="text-gray-600 mt-2">Get to know the champions who make CSK special</p>
+                        </div>
+                    </a>
+                    <a href="schedule.html" class="group">
+                        <div class="card">
+                            <i class="fas fa-calendar text-4xl text-blue-900 mb-4" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold text-blue-900">Match Schedule</h3>
+                            <p class="text-gray-600 mt-2">Plan your match days with our complete schedule</p>
+                        </div>
+                    </a>
+                    <a href="fanzone.html" class="group">
+                        <div class="card">
+                            <i class="fas fa-heart text-4xl text-blue-900 mb-4" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold text-blue-900">Fan Zone</h3>
+                            <p class="text-gray-600 mt-2">Join the conversation and test your CSK knowledge</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section class="py-12 bg-white" aria-labelledby="sponsors-title">
+            <div class="container mx-auto px-4">
+                <header class="text-center mb-8">
+                    <h2 id="sponsors-title" class="text-2xl md:text-3xl font-bold text-blue-900">Our Valued Sponsors</h2>
+                    <p class="text-sm text-gray-600 mt-2">Proud partners who support our journey to excellence</p>
+                </header>
+
+                <!-- Principal Sponsors -->
+                <div class="mb-12">
+                    <h3 class="text-lg md:text-xl font-semibold text-center text-gray-700 mb-6">Principal Sponsors</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center justify-items-center">
+                        <div class="w-full max-w-xs">
+                            <div class="relative overflow-hidden rounded-lg p-4 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp1.png" alt="The India Cements Ltd Logo" class="h-20 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-xs">
+                            <div class="relative overflow-hidden rounded-lg p-4 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp2.png" alt="Gulf Oil Logo" class="h-20 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-xs">
+                            <div class="relative overflow-hidden rounded-lg p-4 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp3.png" alt="SNJ Distilleries Logo" class="h-20 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Official Partners -->
+                <div>
+                    <h3 class="text-lg md:text-xl font-semibold text-center text-gray-700 mb-6">Official Partners</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 items-center justify-items-center">
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp4.png" alt="Nippon Paint Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp5.png" alt="Britannia Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp6.png" alt="Jio Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp7.jpeg" alt="Groww Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp8.png" alt="Partner Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp9.png" alt="Partner Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp10.png" alt="Partner Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[200px]">
+                            <div class="relative overflow-hidden rounded-lg p-3 bg-white shadow-md transition duration-300 hover:shadow-lg">
+                                <img src="assets/images/sponsors/sp11.png" alt="Partner Logo" class="h-16 w-auto mx-auto object-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>Email: info@chennaiipl.com</p>
+                    <p>Phone: +91 44 2852 4500</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/ChennaiIPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Twitter"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/TheChennaiSuperKings/" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Facebook"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/chennaiipl/" 
+                           class="hover:text-yellow-400" 
+                           aria-label="Follow us on Instagram"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Careers</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                    <form class="flex" role="search">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" 
+                               id="email" 
+                               placeholder="Enter your email" 
+                               class="p-2 rounded-l text-black"
+                               required>
+                        <button type="submit" 
+                                class="bg-yellow-400 text-blue-900 px-4 rounded-r font-bold hover:bg-yellow-500 transition">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-blue-800">
+                <p>&copy; 2025 Chennai Super Kings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html> 
