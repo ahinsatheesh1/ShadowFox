@@ -1,99 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahin Satheesh | CUSAT Student Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahin Satheesh | CUSAT Student Portfolio</title>
+  
+  <!-- Essential CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome with only the icons we use -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Single Google Font with only the weights we use -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Computer Science student at CUSAT, passionate about full-stack development and problem solving.">
+  <meta name="keywords" content="CUSAT, Computer Science, Web Development, Portfolio, Student">
+  <meta name="author" content="Ahin Satheesh">
+
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:title" content="Ahin Satheesh | Computer Science Student">
+  <meta property="og:description" content="Computer Science student at CUSAT, passionate about full-stack development and problem solving.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ahinsatheesh.github.io/">
+  <meta property="og:image" content="https://ahinsatheesh.github.io/examples/preview.JPG">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ahin Satheesh | Computer Science Student">
+  <meta name="twitter:description" content="Computer Science student at CUSAT, passionate about full-stack development and problem solving.">
+  <meta name="twitter:image" content="https://ahinsatheesh.github.io/examples/preview.JPG">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
+
 <body>
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">A<span class="highlight-red">hin</span>.</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="logo">A<span class="highlight-red">hin</span>.</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </nav>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="subtitle">UI/UX Designer</p>
-                <h1 class="main-title">Hi, I'm <span class="highlight-red">Ahin</span><br> Satheesh From India</h1>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn primary-btn">Hire Me</a>
-                    <a href="#projects" class="btn secondary-btn">View Work</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="ahin.jpg" alt="Ahin">
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="subtitle">UI/UX Designer</p>
+        <h1 class="main-title">Hi, I'm <span class="highlight-red">Ahin</span><br> Satheesh</h1>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn primary-btn">Hire Me</a>
+          <a href="#projects" class="btn secondary-btn">View Work</a>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <span>Scroll Down</span>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="ahin.jpg" alt="Ahin">
         </div>
+              </div>
+            </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Scroll Down</span>
+      </div>
     </section>
 
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a passionate Full Stack Developer with experience in creating responsive and user-friendly web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm a passionate Full Stack Developer with experience in creating responsive and user-friendly web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+        <div class="coding-scene">
+          <div class="developer">
+            <div class="dev-figure"></div>
+            <div class="workspace">
+              <div class="monitor monitor-main">
+                <div class="screen">
+                  <div class="code-block">
+                    <div class="code-line" data-line="1"><span class="keyword">const</span> <span class="variable">app</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="function">Vue</span>({</div>
+                    <div class="code-line" data-line="2">  <span class="variable">el</span>: <span class="string">'#app'</span>,</div>
+                    <div class="code-line" data-line="3">  <span class="variable">data</span>: {</div>
+                    <div class="code-line" data-line="4">    <span class="variable">message</span>: <span class="string">'Hello World!'</span></div>
+                    <div class="code-line" data-line="5">  },</div>
+                    <div class="code-line" data-line="6">  <span class="variable">methods</span>: {</div>
+                    <div class="code-line" data-line="7">    <span class="function">greet</span>() {</div>
+                    <div class="code-line" data-line="8">      <span class="keyword">return</span> <span class="variable">this</span>.<span class="variable">message</span>;</div>
+                    <div class="code-line" data-line="9">    }</div>
+                    <div class="code-line" data-line="10">  }</div>
+                    <div class="code-line" data-line="11">});</div>
+              </div>
+                </div>
+              </div>
+              <div class="monitor monitor-side">
+                <div class="screen">
+                  <div class="code-block">
+                    <div class="code-line" data-line="1"><span class="keyword">function</span> <span class="function">animate</span>() {</div>
+                    <div class="code-line" data-line="2">  <span class="comment">// Update animation frame</span></div>
+                    <div class="code-line" data-line="3">  <span class="function">requestAnimationFrame</span>(<span class="variable">animate</span>);</div>
+                    <div class="code-line" data-line="4">  <span class="variable">renderer</span>.<span class="function">render</span>(<span class="variable">scene</span>, <span class="variable">camera</span>);</div>
+                    <div class="code-line" data-line="5">}</div>
+              </div>
+                </div>
+              </div>
+              <div class="laptop">
+                <div class="laptop-screen">
+                  <div class="screen">
+                    <div class="code-block">
+                      <div class="code-line" data-line="1"><span class="keyword">import</span> { <span class="variable">useState</span> } <span class="keyword">from</span> <span class="string">'react'</span>;</div>
+                      <div class="code-line" data-line="2"><span class="keyword">const</span> [<span class="variable">count</span>, <span class="function">setCount</span>] = <span class="function">useState</span>(<span class="number">0</span>);</div>
+            </div>
+          </div>
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ambient-light"></div>
+                </div>
+              </div>
+            </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 95%"></div>
+              </div>
+              </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%"></div>
+                </div>
+              </div>
+      <div class="skill-card">
+        <i class="fab fa-js"></i>
+        <h3>JavaScript</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+        <!-- Spotify Clone Project -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="spotifyclone.png" alt="Spotify Clone Project">
+            </div>
+            <div class="project-info">
+                <h3>Spotify Clone</h3>
+                <p>A responsive web-based Spotify Clone that replicates core Spotify features with a modern UI. Built with HTML, CSS, and JavaScript.</p>
+                <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/ahinsatheesh1/spotify-clone" target="_blank" class="btn primary-btn">View Project</a>
+                    <a href="https://github.com/ahinsatheesh1/spotify-clone" target="_blank" class="btn secondary-btn">Source Code</a>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>ahin100123@gmail.com</p>
+        <!-- Twitter Clone Project -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="twitterclone.jpeg" alt="Twitter Clone Project">
+            </div>
+            <div class="project-info">
+                <h3>Twitter Clone (In Progress)</h3>
+                <p>A full-stack Twitter clone application currently under development. Features will include real-time updates, user authentication, and responsive design.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+91 9633244187</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>CUSAT, Kalamassery, Kochi</p>
+                <div class="project-links">
+                    <a href="#" class="btn primary-btn">Coming Soon</a>
+                    <a href="#" class="btn secondary-btn disabled">In Development</a>
                 </div>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-            </form>
         </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <h2 class="section-title">My Journey</h2>
+    <div class="resume-container">
+      <div class="resume-header">
+        <div class="resume-actions">
+          <a href="assets/resume.pdf" class="btn primary-btn" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+              </div>
+              </div>
+      
+      <div class="keyboard-timeline">
+        <div class="timeline-year">
+          <div class="key-cap">2025</div>
+          <div class="timeline-content">
+            <h3>Full Stack Developer</h3>
+            <p>Building scalable full-stack applications and managing end-to-end development processes.</p>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-year">
+          <div class="key-cap">2024</div>
+          <div class="timeline-content">
+            <h3>Frontend Developer</h3>
+            <p>Developing responsive web interfaces and interactive user experiences.</p>
+            <div class="tech-stack">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-year">
+          <div class="key-cap">2023</div>
+          <div class="timeline-content">
+            <h3>Web Development Bootcamp</h3>
+            <p>Intensive training in modern web development technologies and best practices.</p>
+            <div class="tech-stack">
+              <span>Git</span>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-keyboard">
+        <div class="keyboard-row">
+          <div class="key">HTML5</div>
+          <div class="key">CSS3</div>
+          <div class="key">JavaScript</div>
+          <div class="key">TypeScript</div>
+          <div class="key">React</div>
+                      </div>
+        <div class="keyboard-row">
+          <div class="key">Node.js</div>
+          <div class="key">Python</div>
+          <div class="key">MongoDB</div>
+          <div class="key">PostgreSQL</div>
+                      </div>
+        <div class="keyboard-row">
+          <div class="key">Git</div>
+          <div class="key">Docker</div>
+          <div class="key">AWS</div>
+          <div class="key">Firebase</div>
+              </div>
+            </div>
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="social-links">
-            <a href="https://github.com/ahinsatheesh1" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ahin-satheesh/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>ahin100123@gmail.com</p>
         </div>
-        <p>&copy; 2024 Ahin Satheesh. All rights reserved.</p>
-    </footer>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <p>+91 9633244187</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>CUSAT, Kalamassery, Kochi</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/ahinsatheesh1" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ahin-satheesh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Ahin Satheesh. All rights reserved.</p>
+  </footer>
+
+  <!-- Essential JavaScript -->
+  <script src="script.js"></script>
 </body>
-</html> 
+
+</html>
